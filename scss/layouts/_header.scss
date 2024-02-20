@@ -1,0 +1,108 @@
+.l-header {
+  transition: $transition;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: $base-background-colour;
+  padding: .75rem 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--pinned {
+    transform: translateY(0%);
+    background: $base-background-colour;
+  }
+
+  &--not-top {
+    background: $base-background-colour;
+  }
+
+  &--top {
+    background: transparent;
+  }
+
+  &--unpinned {
+    transform: translateY(-150%);
+  }
+
+  &__branding {
+    display: flex;
+  }
+
+  &__menu {
+    display: none;
+      
+    @include media($breakpoint-md) {
+        display: flex;
+    }
+      
+    .menu {
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+
+      li {
+        a {
+          padding: .2rem .4rem;
+          text-transform: uppercase;
+          font-weight: $bold-font-weight;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+    .c-menu-mobile {
+      margin: 0;
+      
+      &__toggler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        padding: 0 !important;
+
+      }
+    }
+  }
+}
+
+.page-header {
+  padding: 10rem 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container-fluid {
+    .wrapper {
+      width: 45%;
+      margin: 0 auto;
+
+      @include media(1365px, max) {
+        width: 75%
+      }
+      @include media($breakpoint-xs, max) {
+        width: 100%
+      }
+      
+      h1 {
+        @extend .base-head;
+        color: $base-background-colour;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}

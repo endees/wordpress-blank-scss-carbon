@@ -1,0 +1,17 @@
+body {
+  color: $base-colour;
+  font-weight: $base-font-weight;
+  background-color: $base-background-colour;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+
+  @include media($breakpoint-sm, max) {
+    font-size: .8rem;
+    line-height: $mobile-line-height;
+  }
+}
+
+hr {
+  height: 1px;
+  background-color: $base-colour;
+}

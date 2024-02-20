@@ -1,0 +1,8 @@
+main {
+    section {
+        padding: 4rem 0;
+        @include media(991px, max) {
+            padding: 4rem .75rem;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "key": "ui_options_page_65c2b5f02f730",
+    "title": "Opcje stopki",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Opcje stopki",
+    "menu_slug": "opcje-stopki",
+    "parent_slug": "acf-options-opcje-globalne",
+    "advanced_configuration": 0,
+    "icon_url": "",
+    "menu_title": "",
+    "position": "",
+    "redirect": false,
+    "description": "",
+    "update_button": "Aktualizuj",
+    "updated_message": "Ustawienia zostały zaktualizowane",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1707358727
+}

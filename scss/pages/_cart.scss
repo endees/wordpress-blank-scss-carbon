@@ -1,0 +1,19 @@
+body.woocommerce-cart {
+    .wc-block-components-quantity-selector .wc-block-components-quantity-selector__button {
+        padding: 0 !important;
+    }
+
+    .wc-block-components-quantity-selector input.wc-block-components-quantity-selector__input {
+        border: 0 !important;
+    }
+
+    .wc-block-cart-item__remove-link {
+        padding: 0 !important;
+        letter-spacing: 0px !important;
+        font-size: .9rem !important;
+    }
+
+    .wc-block-grid__products {
+        gap: .5rem;
+    }
+}

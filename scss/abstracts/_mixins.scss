@@ -1,0 +1,8 @@
+/*
+* Sets element media query
+*/
+@mixin media($breakpoint, $type: min) {
+  @media screen and (#{$type}-width: #{$breakpoint}) {
+    @content;
+  }
+}

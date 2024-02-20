@@ -1,0 +1,60 @@
+input {
+    background-color: $secondary-background-colour !important;
+    padding: 1.2rem .75rem;
+    border: 0 !important;
+    border-bottom: 2px solid $border-colour !important;
+    width: 100%;
+    border-radius: 0 !important;
+
+    &::placeholder {
+        text-transform: uppercase;
+        font-size: 14px;
+
+    }
+
+    [type="text"] {
+        
+    }
+    
+    [type="email"] {
+        
+    }
+    
+    [type="tel"] {
+        
+    }
+    
+    [type="radio"] {
+        
+    }
+    
+    &[type="checkbox"] {
+        width: fit-content !important;
+        height: fit-content !important;
+        border-bottom: 0 !important;
+        // width: 25px !important;
+        // aspect-ratio: 1 / 1 !important;
+        // height: 25px !important;
+        padding: 0 !important;
+    }
+    
+    &[type="button"] {
+        transition: $transition;
+    }
+    
+    &[type="submit"] {
+        transition: $transition;
+    }
+    
+    [type="file"] {
+        
+    }
+    
+    [type="time"] {
+        
+    }
+    
+    [type="date"] {
+        
+    }
+}

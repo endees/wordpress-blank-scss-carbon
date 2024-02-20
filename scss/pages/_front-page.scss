@@ -1,0 +1,148 @@
+body.home {
+    .hero {
+        height: 800px;
+        overflow: hidden;
+        position: relative;
+        
+        @include media($breakpoint-xs, max) {
+            height: 70svh;
+        }
+
+        .carousel {
+            height: 100%;
+            .carousel-inner {
+                height: 100%;
+
+                .carousel-item {
+                    height: 100%;
+
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        &-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding-top: 90px;
+            background-color: rgba($base-colour, .7);
+            color: $base-background-colour;
+            
+            
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 2.5rem;
+                height: 100%;
+                text-align: center;
+
+                @include media($breakpoint-xs, max) {
+                    gap: 1.75rem;
+                }
+
+                .wrapper {
+                    h2 {
+                        font-weight: $regular-font-weight;
+                        letter-spacing: $head-letterspacing;
+                        font-size: 2rem;
+
+                        @include media($breakpoint-xs, max) {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    h1 {
+                        letter-spacing: $head-letterspacing;
+                        font-size: 4rem;
+                        line-height: $head-line-height;
+
+                        @include media($breakpoint-xs, max) {
+                            font-size: 2rem;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 !important;
+
+        @include media(991px, max) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrapper {
+            // width: 50%;
+            @include media(991px, max) {
+                width: 100%;
+            }
+
+            &:first-child {
+                padding-left: 75px;
+                padding-right: 2rem;
+                padding-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
+                gap: 3.4375rem;
+
+                @include media(991px, max) {
+                    padding: 0;
+                    padding: 4rem .75rem;
+                }
+                
+                p {
+                    text-align: justify;
+                }
+            }
+
+            &:nth-child(2) {
+                height: 100%;
+                display: flex;
+                align-items: flex-start;
+                @include media(991px, max) {
+                    height: 300px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .new-products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 4.6875rem;
+        gap: 3.4375rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,47 @@
+/**
+ * Colours
+ */
+$base-colour: #1E1E1E;
+$base-background-colour: #FBFBFB;
+
+$secondary-background-colour: #F2F2F2;
+$secondary-colour: #707070;
+
+$border-colour: rgba(30, 30, 30, 0.298);
+
+$success-colour: #5cb85c;
+$warning-colour: #f0ad4e;
+$error-colour: #e42f28;
+
+/**
+ * Typography
+ */
+$lato-font-family: "Lato", sans-serif;
+$montserrat-font-family: "Montserrat", sans-serif;
+$regular-font-weight: 400;
+$bold-font-weight: 700;
+$black-font-weight: 900;
+
+$base-font-family: $montserrat-font-family;
+$base-font-weight: $regular-font-weight;
+$base-line-height: 24px;
+$mobile-line-height: 20px;
+
+$head-line-height: 90%;
+
+$head-letterspacing: 10px;
+$subhead-letterspacing: 3px;
+
+/**
+ * Breakpoints
+ */
+$breakpoint-lg: 1200px;
+$breakpoint-md: 992px;
+$breakpoint-sm: 768px;
+$breakpoint-xs: 576px;
+
+/**
+ * Animations
+ */
+$timing: ease-in-out;
+$transition: all 0.2s $timing;

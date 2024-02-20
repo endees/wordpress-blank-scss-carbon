@@ -1,22 +1,46 @@
-//utilities
-@import 'utils/mixins';
-@import 'utils/variables';
-@import 'utils/helpers';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-//base
-@import 'base/typography';
-@import 'base/fonts';
-@import 'base/base';
+// 1. Configuration
+@import "abstracts/_variables.scss";
+@import "abstracts/_mixins";
 
-//layout
+// 2. Vendors
+// @import "vendor/aoe";
+// @import "vendor/viewer";
+// @import "vendor/bootstrap";
 
+// 3. Utilities
+@import "utils/reset";
+@import "utils/wp";
 
-//components
+// 4. Base stuff
+@import "base/_base.scss";
+@import "base/image.scss";
+@import "base/button";
+@import "base/label";
+@import "base/input";
+@import "base/select";
+@import "base/textarea";
+@import "base/list";
+@import "base/typography";
 
+// 5. Layout-related sections
+@import "layouts/container";
+@import "layouts/main";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/product-box";
 
-//vendors
+// 6 .Components
+@import "components/cookies";
+@import "components/menu-mobile";
+@import "components/opinions";
+@import "components/mini-cart";
 
-
-//themes
-
-//pages
+// 7. Page-specific styles
+@import "pages/homepage";
+@import "pages/front-page";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/shop";
+@import "pages/cart";

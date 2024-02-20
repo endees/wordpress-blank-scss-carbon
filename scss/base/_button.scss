@@ -1,0 +1,50 @@
+button, 
+.button, 
+.components-button, 
+.add_to_cart_button {
+    font-weight: 500 !important;
+    padding: 1.125rem 3.125rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: $subhead-letterspacing !important;
+    font-size: 1rem !important;
+    display: block;
+    width: fit-content;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+
+    @include media(565px, max) {
+        font-size: 0.8rem !important;
+    }
+
+    &.btn-outline {
+        border: 3px solid !important;
+    }
+
+    &.btn-white {
+        color: $base-background-colour !important;
+        border-color: $base-background-colour !important;
+
+        &:hover {
+            color: $base-colour !important;
+            background-color: $base-background-colour !important;
+        }
+    }
+
+    &.btn-black {
+        color: $base-colour !important;
+        border-color: $base-colour !important;
+
+        &:hover {
+            color: $base-background-colour !important;
+            background-color: $base-colour !important;
+        }
+    }
+}
+
+.components-button,
+.add_to_cart_button {
+    @extend .btn-outline;
+    @extend .btn-black;
+    transition: $transition !important;
+    padding: .7rem 1rem !important;
+}

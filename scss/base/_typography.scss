@@ -1,0 +1,47 @@
+a,
+button {
+  transition: $transition;
+  cursor: pointer;
+  
+  &:hover {
+    color: $secondary-colour;
+    transition: $transition;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 100%;
+  
+  span {
+    font-weight: $black-font-weight;
+  }
+}
+
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: 0.75em;
+}
+
+
+.base-head {
+  font-size: 64px;
+  letter-spacing: $head-letterspacing;
+  
+  @include media(768px, max) {
+    font-size: 48px; 
+  }
+  @include media(565px, max) {
+    font-size: 36px; 
+  }
+}

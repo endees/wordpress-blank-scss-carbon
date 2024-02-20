@@ -1,0 +1,129 @@
+body.page-template-page-contact {
+    .contact-main {
+        .container-fluid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+
+            @include media($breakpoint-sm, max) {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                align-items: flex-start;
+            }
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 1.3rem;
+                width: 100%;
+
+                h4 {
+                    letter-spacing: $subhead-letterspacing;
+                    font-size: 40px;
+
+                    @include media($breakpoint-sm, max) {
+                        font-size: 24px;
+                    }
+                }
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.3rem;
+                    &-address {
+                        display: flex;
+                        flex-direction: row;
+                        gap: .5rem;
+                        
+                        .wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            gap: .2rem;
+                        }
+                    }
+
+                    &-contact {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .2rem;
+
+                        .wrapper {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: .5rem;
+                        }
+                    }
+
+                    &-nip {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .2rem;
+                    }
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        gap: .2rem;
+
+                        
+                    }
+
+                    .social_media {
+                        display: flex;
+                        flex-direction: row;
+                        gap: .6rem;
+                        align-items: center;
+
+                        li {
+                            a {
+                                img {
+                                    max-width: 20px;
+                                    min-width: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .wpcf7 {
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.5rem;
+                        .row {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 1rem;
+
+                            .col-6 {
+                                padding: 0;
+                                width: calc(50% - .5rem);
+                            }
+
+                            p {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+
+                &:first-child {
+                    padding-left: 150px;
+
+                    @include media($breakpoint-lg, max) {
+                        padding-left: 0;
+                    }
+
+                    .wrapper {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

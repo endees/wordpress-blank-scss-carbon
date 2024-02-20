@@ -1,0 +1,15 @@
+textarea {
+    background-color: $secondary-background-colour !important;
+    padding: 1.2rem .75rem;
+    border: 0 !important;
+    border-bottom: 2px solid $border-colour !important;
+    width: 100%;
+    border-radius: 0 !important;
+
+
+    &::placeholder {
+        text-transform: uppercase;
+        font-size: 14px;
+
+    }
+}

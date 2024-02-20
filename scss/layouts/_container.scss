@@ -1,0 +1,26 @@
+.l-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &--large {
+    max-width: 1400px;
+  }
+
+  &--full {
+    width: 100%;
+    max-width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.container-fluid {
+  padding: auto calc(150px / 2);
+
+  @include media($breakpoint-md, max) {
+    padding: 0 .75rem;
+  }
+}
